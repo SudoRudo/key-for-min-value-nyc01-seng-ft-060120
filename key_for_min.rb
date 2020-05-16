@@ -9,12 +9,13 @@ def key_for_min_value(name_hash)
   end
   
    min_value = key_values[0]
+   small_key = ""
    i = 0
   while i < key_values.length do
     if key_values[i] <= min_value
-      min_value = key_values[i]
+      small_key = name_hash.keys[i]
     end
     i += 1
   end
-  min_value
+  small_key
 end
